@@ -82,3 +82,47 @@ The `tasks` table contains:
 
 ```bash
 composer install
+
+### 2. Configure the environment
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+### 3. Generate application key
+
+```bash
+php artisan key:generate
+```
+
+### 4. Create the SQLite database
+
+Make sure the SQLite database file exists:
+
+```text
+database/database.sqlite
+```
+
+### 5. Run database migrations
+
+```bash
+php artisan migrate
+```
+
+### 6. Start the Laravel development server
+
+```bash
+php artisan serve
+```
+
+Open the application in your browser using the URL shown in the terminal.
+
+## Project Purpose
+
+TaskFlow was developed as an individual Laravel mini project to demonstrate the basic Laravel development flow:
+
+**Database → Model → Controller → Routes → Blade**
+
+The project focuses on managing personal tasks through a simple and user-friendly web interface.
